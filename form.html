@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Class Booking Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="https://formspree.io/f/meojdeav" method="POST">
+            <h2>Gym Class Booking Form</h2>
+
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Phone Number Field -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <!-- Date and Time Field -->
+            <!-- <label for="datetime">Preferred Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" required> -->
+
+            <!-- Class Type Selection -->
+            <label for="class-type">Class Type:</label>
+            <select id="class-type" name="class-type" required onchange="updateTeachers()">
+                <option value="" disabled selected>Select a class</option>
+                <option value="kickboxing">Kickboxing</option>
+                <option value="pilates">Pilates</option>
+                <option value="yoga">Yoga</option>
+            </select>
+
+            <!-- Teacher Selection -->
+            <label for="teacher">Select Teacher:</label>
+            <select id="teacher" name="teacher" required>
+                <option value="" disabled selected>Select a teacher</option>
+            </select>
+
+            <!-- Membership Type -->
+            <label for="membership">Membership Type:</label>
+            <select id="membership" name="membership" required>
+                <option value="" disabled selected>Select membership</option>
+                <option value="monthly">Per pass</option>
+                <option value="quarterly">Weekly</option>
+                <option value="yearly">Monthly</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function updateTeachers() {
+            const classType = document.getElementById('class-type').value;
+            const teacherSelect = document.getElementById('teacher');
+
+            // Define teachers for each class type
+            const teachers = {
+                kickboxing: [
+                    { value: 'Nina', text: 'Nina' },
+                ],
+                pilates: [
+                    { value: 'Aysun', text: 'Aysun' },
+                    { value: 'Wendy', text: 'Wendy' },
+                ],
+                yoga: [
+                    { value: 'Lala', text: 'Lala' },
+                    { value: 'Linara', text: 'Linara' },
+                ]
+            };
+
+            // Clear previous options
+            teacherSelect.innerHTML = '<option value="" disabled selected>Select a teacher</option>';
+
+            // Add new options based on selected class type
+            if (classType in teachers) {
+                teachers[classType].forEach(teacher => {
+                    const option = document.createElement('option');
+                    option.value = teacher.value;
+                    option.textContent = teacher.text;
+                    teacherSelect.appendChild(option);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
