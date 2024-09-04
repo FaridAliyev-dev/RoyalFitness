@@ -42,13 +42,7 @@ body {
 .section::after,
 .section::before {
   content: "";
-  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: black;
   bottom: 0;
 }
 .header::after {
