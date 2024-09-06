@@ -7,20 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <div class="menu">
+        <div class="container flex">
+            <!-- Mobile Button -->
+            <div class="mobile-btn">
+                <ion-icon name="grid"></ion-icon>
+            </div>
+            <div class="logo">
+                <img src="/Assets/RoyalFit-icon.png" alt="" />
+            </div>
+            <ul class="nav">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#why-us">Services</a></li>
+                <li class="nav-item"><a href="#explore">About us</a></li>
+                <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="btn">Join Us!</a>
+        </div>
+    </div>
+
+
     <div class="form-container">
         <form action="https://formspree.io/f/meojdeav" method="POST">
-            <h2>Gym Class Booking Form</h2>
+            <h2 class="h2-spacing">Gym Class Booking Form</h2>
 
             <!-- Name Field -->
-            <label for="name">Full Name:</label>
+            <label for="name" class="h2-spacing">Full Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
             <!-- Email Field -->
-            <label for="email">Email Address:</label>
+            <label for="email" class="h2-spacing">Email Address:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
             <!-- Phone Number Field -->
-            <label for="phone">Phone Number:</label>
+            <label for="phone" class="h2-spacing">Phone Number:</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
             <!-- Date and Time Field -->
@@ -28,31 +50,31 @@
             <input type="datetime-local" id="datetime" name="datetime" required> -->
 
             <!-- Class Type Selection -->
-            <label for="class-type">Class Type:</label>
+            <label for="class-type" class="h2-spacing">Class Type:</label>
             <select id="class-type" name="class-type" required onchange="updateTeachers()">
-                <option value="" disabled selected>Select a class</option>
+                <option value="" disabled selected class="h2-spacing">Select a class</option>
                 <option value="kickboxing">Kickboxing</option>
                 <option value="pilates">Pilates</option>
                 <option value="yoga">Yoga</option>
             </select>
 
             <!-- Teacher Selection -->
-            <label for="teacher">Select Teacher:</label>
+            <label for="teacher" class="h2-spacing">Select Teacher:</label>
             <select id="teacher" name="teacher" required>
                 <option value="" disabled selected>Select a teacher</option>
             </select>
 
             <!-- Membership Type -->
-            <label for="membership">Membership Type:</label>
+            <label for="membership" class="h2-spacing">Membership Type:</label>
             <select id="membership" name="membership" required>
-                <option value="" disabled selected>Select membership</option>
+                <option value="" disabled selected >Select membership</option>
                 <option value="monthly">Per pass</option>
                 <option value="quarterly">Weekly</option>
                 <option value="yearly">Monthly</option>
             </select>
 
             <!-- Submit Button -->
-            <button type="submit">Submit</button>
+            <button type="submit" style="margin-top: 15px; color: black; font-size: 18px; font-weight: 800;">Submit</button>
         </form>
     </div>
 
@@ -64,7 +86,7 @@
             // Define teachers for each class type
             const teachers = {
                 kickboxing: [
-                    { value: 'Nina', text: 'Nina' },
+                    { value: 'Nina', text: 'Nina' }, //So basically you can change the value and the text of it, the value stands for the as it seems value let's say someone signs up the value will show up on your mail so use value same as text and text is the text that users see when they choose it. If you want to add another trainer to let's say kickboxing, just copy this line and paste it under and change value and text of it. Additionally this type of messqge on the code called comment so it doesn't affect the code itself it's just a comment a feature for developers to put in! If you have any trouble with setting it up or sum just text me or call me I will gladly fix it up and epxlain it up! [+994 51 857 38 75] [farid.aliyevv258@gmail.com]
                 ],
                 pilates: [
                     { value: 'Aysun', text: 'Aysun' },
