@@ -187,6 +187,8 @@ body {
   margin-bottom: 10px;
   outline: 2px solid #fff;
   padding: 14px;
+  height: 350px;
+  width: auto;
 }
 .trainer .mb {
   margin-bottom: 10px;
@@ -502,3 +504,15 @@ span {
 
   
 }
+
+.kickboxing {
+  max-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .trainer img {
+    margin: 30px;
+  }
+
+}
+
