@@ -196,7 +196,7 @@ body {
 /* End Trainer */
 /* Testimonial */
 #testimonial .visual img {
-  width: 90%;
+  width: 100%;
   display: block;
   margin-left: auto;
 }
@@ -494,13 +494,13 @@ span {
 
   input, textarea {
     width: 100%;
-    padding: 20px;
-    font-size: 18px; 
+    padding: 15px;
+    font-size: 15px;
   }
 
   .btn-primary {
-    font-size: 18px; 
-    padding: 15px; 
+    font-size: 15px;
+    padding: 17px;
   }
 
   
