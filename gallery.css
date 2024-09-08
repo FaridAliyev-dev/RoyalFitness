@@ -349,10 +349,6 @@
     .client {
       margin-bottom: 50px;
     }
-    #discount .visual img {
-      width: 70%;
-      margin-bottom: 30px;
-    }
   }
   @media (max-width: 530px) {
     .header::after,
