@@ -379,6 +379,7 @@ End Testimonial */
   margin-bottom: 10px;
   font-weight: bold;
   color: #e5b800; /* Bright color for emphasis */
+  text-align: center;
 }
 
 .contact-description p {
