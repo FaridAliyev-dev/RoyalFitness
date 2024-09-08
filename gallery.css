@@ -99,7 +99,7 @@ div.gallery .item:hover img{
   opacity: 0;
 }
 .item:hover .overlay{
-  opacity: 1;
+  opacity: hidden;
 }
 .item .overlay a{
   display: inline-block;
@@ -127,4 +127,8 @@ div.gallery .item:hover img{
     width: 100%;
     margin: 4px 0px;
   }
+}
+
+.gallery-img {
+    padding-top: 10px;
 }
