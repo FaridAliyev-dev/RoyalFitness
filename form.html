@@ -34,23 +34,15 @@
         <form action="https://formspree.io/f/meojdeav" method="POST">
             <h2 class="h2-spacing">Book a class!</h2>
 
-            <!-- Name Field -->
             <label for="name" class="h2-spacing">Full Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <!-- Email Field -->
             <label for="email" class="h2-spacing">Email Address:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <!-- Phone Number Field -->
             <label for="phone" class="h2-spacing">Phone Number:</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-            <!-- Date and Time Field -->
-            <!-- <label for="datetime">Preferred Date and Time:</label>
-            <input type="datetime-local" id="datetime" name="datetime" required> -->
-
-            <!-- Class Type Selection -->
             <label for="class-type" class="h2-spacing">Class Type:</label>
             <select id="class-type" name="class-type" required onchange="updateTeachers()">
                 <option value="" disabled selected class="h2-spacing">Select a class</option>
@@ -59,13 +51,11 @@
                 <option value="yoga">Yoga</option>
             </select>
 
-            <!-- Teacher Selection -->
             <label for="teacher" class="h2-spacing">Select Teacher:</label>
             <select id="teacher" name="teacher" required>
                 <option value="" disabled selected>Select a teacher</option>
             </select>
 
-            <!-- Membership Type -->
             <label for="membership" class="h2-spacing">Membership Type:</label>
             <select id="membership" name="membership" required>
                 <option value="" disabled selected >Select membership</option>
@@ -74,7 +64,6 @@
                 <option value="yearly">Yearly</option>
             </select>
 
-            <!-- Submit Button -->
             <button type="submit" style="margin-top: 15px; color: black; font-size: 18px; font-weight: 800;">Submit</button>
         </form>
     </div>
@@ -99,10 +88,8 @@
                 ]
             };
 
-            // Clear previous options
             teacherSelect.innerHTML = '<option value="" disabled selected>Select a teacher</option>';
 
-            // Add new options based on selected class type
             if (classType in teachers) {
                 teachers[classType].forEach(teacher => {
                     const option = document.createElement('option');

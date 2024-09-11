@@ -298,7 +298,7 @@ div.gallery .item:hover img {
 }
 /* End Buttons */
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .flex {
     flex-direction: column;
     text-align: center;
@@ -396,13 +396,15 @@ div.gallery .item:hover img {
 
 .video-player {
   width: 100%;
-   /* Set the max width as desired */
   height: auto; /* Maintain aspect ratio */
   display: block;
   margin: 0 auto; /* Center the video */
   border-radius: 10px; /* Optional: Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+  padding: 0; /* Remove any padding */
+  margin-bottom: 0; /* Remove any bottom margin */
 }
+
 
 .overlay {
   position: absolute;
@@ -418,6 +420,11 @@ div.gallery .item:hover img {
   transition: opacity 0.3s ease;
 }
 
-.item.video:hover .overlay {
-  opacity: 1;
+
+
+
+@media (max-width: 960px) {
+  .video-player {
+    height: 400px;
+  }
 }

@@ -516,4 +516,18 @@ span {
   }
 
 }
+@media (min-width: 960px) {
+.video-player {
+  max-width: 900px;
+  padding-top: 50px;
+}
 
+}
+
+@media (max-width: 960px) {
+  .video-player {
+    max-width: 500px;
+    border-radius: 50px;
+  }
+  
+  }
