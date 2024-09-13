@@ -132,7 +132,7 @@ body {
 /* Buttons */
 .btn {
   padding: 6px 28px;
-  background: radial-gradient(circle, #ffd700, #ffbf00, #d4af37);
+  background: #e5b800;
   border-radius: 40px;
   font-size: 20px;
   font-weight: 600;
@@ -142,7 +142,7 @@ body {
   transition: background 0.3s linear
 }
 .btn:hover {
-  background: radial-gradient(circle, #e6c200, #d4a000, #b38b2e);
+  background: #d4a000;
 }
 .btn-2 {
   font-size: 35px;
@@ -151,7 +151,7 @@ body {
   transition: 0.3s linear;
 }
 .btn-2:hover {
-  color: #e5b800;
+  color: #d4a000;
 }
 /* End Buttons */
 /* Header */
@@ -437,7 +437,7 @@ input:focus, textarea:focus {
 }
 
 .btn-primary:hover {
-  background-color: #e5b800;
+  background-color: #d4a000;
 }
 
 
