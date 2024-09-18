@@ -266,7 +266,7 @@ End Testimonial */
 }
 /* End Footer */
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1016px) {
   .flex {
     flex-direction: column;
     text-align: center;
@@ -412,7 +412,7 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1016px) {
     .nav {
         display: none; /* Hide the navbar on smaller screens */
     }
