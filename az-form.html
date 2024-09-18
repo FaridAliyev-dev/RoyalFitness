@@ -11,57 +11,64 @@
 
     <div class="menu">
         <div class="container flex">
-            <!-- Mobile Button -->
             <div class="mobile-btn">
                 <ion-icon name="grid"></ion-icon>
             </div>
             <div class="logo">
-                <a href="index.html"> <img src="Assets/RoyalFit-icon.png" alt="" /></a> 
+                <a href="index.html"> <img src="/Assets/RoyalFit-icon.png" alt="" /></a> 
             </div>
             <ul class="nav">
-                <li class="nav-item"><a href="index.html#">Home</a></li>
-                <li class="nav-item"><a href="index.html#why-us">Services</a></li>
-                <li class="nav-item"><a href="index.html#explore">About us</a></li>
-                <li class="nav-item"><a href="index.html#gallery">Gallery</a></li>
-                <li class="nav-item"><a href="index.html#contact">Contact</a></li>
+                <li class="nav-item"><a href="az.html#">Ana Səhifə</a></li>
+                <li class="nav-item"><a href="az.html#why-us">Xidmətlər</a></li>
+                <li class="nav-item"><a href="az.html#explore">Haqqımızda</a></li>
+                <li class="nav-item"><a href="az-gallery.html">Qalereya</a></li>
+                <li class="nav-item"><a href="az.html#contact">Əlaqə</a></li>
             </ul>
-            <a href="form.html" class="btn">Join Us!</a>
+            <div>
+                <a  class="language" href="az.html" >
+                    <img src="azerbaijani-flag.png" id="language" style="height: 25px; text-decoration: none; cursor: pointer;">
+                    </a>
+                    <a  class="language" href="index.html" >
+                    <img src="us-flag.png" id="language" style="height: 25px; text-decoration: none; ">
+                </a>
+                </div>
+            <a href="form.html" class="btn">Bizə Qoşulun!</a>
         </div>
     </div>
 
 
     <div class="form-container">
         <form action="https://formspree.io/f/meojdeav" method="POST">
-            <h2 class="h2-spacing">Book a class!</h2>
+            <h2 class="h2-spacing">Bizə Qoşul!</h2>
 
-            <label for="name" class="h2-spacing">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="name" class="h2-spacing">Ad və Soyad:</label>
+            <input type="text" id="name" name="name" placeholder="Ad və Soyadı daxil edin" required>
 
-            <label for="email" class="h2-spacing">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="email" class="h2-spacing">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email ünvanınızı daxil edin" required>
 
-            <label for="phone" class="h2-spacing">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <label for="phone" class="h2-spacing">Telefon:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Nömrənizi daxil edin" required>
 
-            <label for="class-type" class="h2-spacing">Class Type:</label>
+            <label for="class-type" class="h2-spacing">İdman növü:</label>
             <select id="class-type" name="class-type" required onchange="updateTeachers()">
-                <option value="" disabled selected class="h2-spacing">Select a class</option>
+                <option value="" disabled selected class="h2-spacing">İdman növunu seçin</option>
                 <option value="kickboxing">Kickboxing</option>
                 <option value="pilates">Pilates</option>
                 <option value="yoga">Yoga</option>
             </select>
 
-            <label for="teacher" class="h2-spacing">Select Teacher:</label>
+            <label for="teacher" class="h2-spacing">Trainer:</label>
             <select id="teacher" name="teacher" required>
-                <option value="" disabled selected>Select a teacher</option>
+                <option value="" disabled selected>Traineri seçin</option>
             </select>
 
-            <label for="membership" class="h2-spacing">Membership Type:</label>
+            <label for="membership" class="h2-spacing">Müddət:</label>
             <select id="membership" name="membership" required>
-                <option value="" disabled selected >Select membership</option>
-                <option value="weekly">Weekly</option>
-                <option value="monthly">Monthly</option>
-                <option value="yearly">Yearly</option>
+                <option value="" disabled selected >Müddəti seçin</option>
+                <option value="weekly">Həftəlik</option>
+                <option value="monthly">Aylıq</option>
+                <option value="yearly">İllik</option>
             </select>
 
             <button type="submit" style="margin-top: 15px; color: black; font-size: 18px; font-weight: 800;">Submit</button>
@@ -88,7 +95,7 @@
                 ]
             };
 
-            teacherSelect.innerHTML = '<option value="" disabled selected>Select a teacher</option>';
+            teacherSelect.innerHTML = '<option value="" disabled selected>Traineri seçin</option>';
 
             if (classType in teachers) {
                 teachers[classType].forEach(teacher => {
