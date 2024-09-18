@@ -433,3 +433,17 @@ button:hover {
     background-color: black;
   }
 }
+
+
+.language {
+  text-decoration: none;
+  height: 25px;
+}
+
+#language {
+  border: 1px solid #e5b800;
+  /* border-radius: 10px; */
+  padding: 0; /* Ensure no extra padding around the image */
+  display: inline-block; /* Ensure no extra spacing */
+  vertical-align: middle; /* Align images consistently */
+}
