@@ -546,3 +546,9 @@ span {
     vertical-align: middle; /* Align images consistently */
 }
   
+
+@media (max-width: 1016px) {
+  .language-selection {
+    margin-bottom: 10px;
+  }
+}
