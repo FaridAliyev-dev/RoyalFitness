@@ -363,7 +363,7 @@ End Testimonial */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px; /* Space between the description and form */
+  gap: 40px; 
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
@@ -378,14 +378,14 @@ End Testimonial */
   font-size: 24px;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #e5b800; /* Bright color for emphasis */
+  color: #e5b800; 
   text-align: center;
 }
 
 .contact-description p {
   font-size: 16px;
   line-height: 1.6;
-  color: #ccc; /* Light grey text for the description */
+  color: #ccc;
   text-align: center;
 }
 
