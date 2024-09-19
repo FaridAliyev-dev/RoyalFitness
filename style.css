@@ -59,9 +59,10 @@ body {
   margin-top: 20px;
 }
 .section {
-  background: rgb(11, 11, 11);
-  position: relative;
-  padding: 80px 0;
+    background: black;
+    position: relative;
+    padding: 80px 0;
+
 }
 .section::after {
   left: -200px;
@@ -71,7 +72,8 @@ body {
   right: -200px;
 }
 .section:nth-child(even) {
-  background: #141615;
+    background: black;
+
 }
 .section:nth-child(even)::after,
 .section:nth-child(even)::before {
@@ -475,7 +477,7 @@ span {
   .contact-form {
     padding: 40px; 
     border-radius: 12px;
-    background-color: #1c1c1c; 
+    background-color: black; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
     width: 100%; 
     box-sizing: border-box; 
