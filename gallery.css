@@ -437,8 +437,7 @@ div.gallery .item:hover img {
 
 #language {
   border: 1px solid #e5b800;
-  /* border-radius: 10px; */
-  padding: 0; /* Ensure no extra padding around the image */
-  display: inline-block; /* Ensure no extra spacing */
-  vertical-align: middle; /* Align images consistently */
+  padding: 0;
+  display: inline-block; 
+  vertical-align: middle; 
 }
