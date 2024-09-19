@@ -351,7 +351,7 @@ End Testimonial */
 }
 /* Menu and Navbar */
 .menu {
-    background-color: black; /* Dark background for the menu */
+    background-color: black; 
     padding: 15px 30px;
     position: sticky;
     top: 0;
@@ -367,13 +367,13 @@ End Testimonial */
 
 /* Form Container */
 .form-container {
-    background-color: #1e1e1e; /* Dark background for the form container */
+    background-color: #1e1e1e; 
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 500px;
     width: 100%;
-    margin: 40px auto; /* Center the form on the page */
+    margin: 40px auto;
 }
 
 form {
@@ -393,8 +393,8 @@ select {
     margin-bottom: 15px;
     border: 1px solid #333;
     border-radius: 4px;
-    background-color: #333; /* Dark input background */
-    color: #fff; /* White text for inputs */
+    background-color: #333; 
+    color: #fff; 
 }
 
 button {
@@ -414,7 +414,7 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 1016px) {
     .nav {
-        display: none; /* Hide the navbar on smaller screens */
+        display: none; 
     }
 
     .mobile-btn {
@@ -442,8 +442,7 @@ button:hover {
 
 #language {
   border: 1px solid #e5b800;
-  /* border-radius: 10px; */
-  padding: 0; /* Ensure no extra padding around the image */
-  display: inline-block; /* Ensure no extra spacing */
-  vertical-align: middle; /* Align images consistently */
+  padding: 0; 
+  display: inline-block; 
+  vertical-align: middle; 
 }

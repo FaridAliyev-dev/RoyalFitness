@@ -231,41 +231,36 @@ body {
 
 .explore-img {
   border-radius: 40px;
-  width: 30%; /* Adjust size as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin: 20px; /* Space between images */
+  width: 30%; 
+  height: auto; 
+  margin: 20px; 
 
 }
 
 .explore-img1 {
-  width: 30%; /* Slightly larger size for the middle image */
+  width: 30%; 
   border-radius: 40px;
 }
 
 .explore-img2 {
-  width: 30%; /* Same size as the first image */
+  width: 30%; 
   border-radius: 40px;
   margin: 20px;
 }
 
 .visual img {
-  width: 105%; /* Consistent sizing */
-  height: auto; /* Maintain aspect ratio */
+  width: 105%; 
+  height: auto; 
 }
 End Testimonial */
-/* Discount */
 #discount {
   padding: 40px 0;
 }
-/* End  Discount */
-/* Footer */
 .footer {
   padding: 30px 0;
   border-top: 1px solid #fff;
   text-align: center;
 }
-/* End Footer */
-/* Responsive */
 @media (max-width: 1016px) {
   .flex {
     flex-direction: column;
@@ -349,7 +344,6 @@ End Testimonial */
     font-size: 16px;
   }
 }
-/* End Responsive */
 
 .primary.mb {
   color: #fff;
@@ -466,7 +460,6 @@ span {
   max-width: 55%;
 }
 
-/* Responsive styles for smaller screens */
 @media (max-width: 1016px) {
   .contact-container {
     flex-direction: column;
